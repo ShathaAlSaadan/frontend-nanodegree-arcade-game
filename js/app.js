@@ -22,10 +22,10 @@ Enemy.prototype.update = function(dt) {
     }else{
         this.x =0;
     }
-    //this.chckCollision();
+    this.chckCollision();
 };
 
-/*Enemy.prototype.chckCollision = function(){
+Enemy.prototype.chckCollision = function(){
     if (player.y + 131 >= this.y + 90 &&
         player.y + 73 <= this.y + 135 &&
         player.x + 25 <= this.x + 88 &&
@@ -33,7 +33,7 @@ Enemy.prototype.update = function(dt) {
         console.log('collision');
         gameReset();
     }
-};*/
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -136,3 +136,9 @@ function gameOver() {
     }
 }
 
+/*
+ * updates the on screen score display
+ */
+/*function updateDisplay() {
+    scoreDiv.innerHTML = 'Score ' + score;
+}*/
