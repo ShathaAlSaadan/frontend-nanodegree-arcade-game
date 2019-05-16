@@ -119,7 +119,7 @@ document.addEventListener('keyup', function(e) {
 
 function gameReset() {
     player.reset();
-    //score = 0;
+    score = 0;
     //updateDisplay();
     allEnemies = [];
     allEnemies.push(
